@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fiE-Ic-o1d">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Register View Controller-->
+        <scene sceneID="7dT-Aw-6eU">
+            <objects>
+                <viewController storyboardIdentifier="RegisterViewController" id="fiE-Ic-o1d" customClass="RegisterViewController" customModule="LoginFirebase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qsH-CR-DMs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cadastrar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUz-Bz-tov">
+                                <rect key="frame" x="84" y="72" width="207" height="41"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yl1-S2-dYJ">
+                                <rect key="frame" x="32" y="222" width="311" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="311" id="lcX-d5-Ln4"/>
+                                    <constraint firstAttribute="height" constant="34" id="zAj-ZR-UoB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K5m-Hs-NBN">
+                                <rect key="frame" x="32" y="356" width="311" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Mr5-WY-Egq"/>
+                                    <constraint firstAttribute="width" constant="311" id="eUT-ZG-H7J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o44-qd-ksR">
+                                <rect key="frame" x="32" y="316" width="57" height="28"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzU-bG-sgV">
+                                <rect key="frame" x="32" y="182" width="51" height="28"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ic-4Y-z2r">
+                                <rect key="frame" x="32" y="431" width="311" height="44"/>
+                                <color key="backgroundColor" red="0.25912519579999999" green="0.43834447450000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="M1Z-zg-IMy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="23"/>
+                                <state key="normal" title="Cadastrar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerButton:" destination="fiE-Ic-o1d" eventType="touchUpInside" id="lO3-lP-tzq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GuN-oz-mst">
+                                <rect key="frame" x="165.5" y="509" width="44" height="36"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Voltar"/>
+                                <connections>
+                                    <action selector="backButton:" destination="fiE-Ic-o1d" eventType="touchUpInside" id="U4g-Td-Hn7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kia-YW-QMP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="K5m-Hs-NBN" firstAttribute="leading" secondItem="kia-YW-QMP" secondAttribute="leading" constant="32" id="1ax-Jv-Xo1"/>
+                            <constraint firstItem="GuN-oz-mst" firstAttribute="centerX" secondItem="qsH-CR-DMs" secondAttribute="centerX" id="46S-96-DDU"/>
+                            <constraint firstItem="o44-qd-ksR" firstAttribute="leading" secondItem="kia-YW-QMP" secondAttribute="leading" constant="32" id="AaB-Qs-9WY"/>
+                            <constraint firstItem="GuN-oz-mst" firstAttribute="top" secondItem="4Ic-4Y-z2r" secondAttribute="bottom" constant="34" id="CLe-AQ-uQE"/>
+                            <constraint firstItem="eUz-Bz-tov" firstAttribute="leading" secondItem="kia-YW-QMP" secondAttribute="leading" constant="84" id="EGY-mn-GoK"/>
+                            <constraint firstItem="kia-YW-QMP" firstAttribute="trailing" secondItem="eUz-Bz-tov" secondAttribute="trailing" constant="84" id="MkI-qO-Jvh"/>
+                            <constraint firstItem="Yl1-S2-dYJ" firstAttribute="leading" secondItem="kia-YW-QMP" secondAttribute="leading" constant="32" id="NzE-PR-iVS"/>
+                            <constraint firstItem="GuN-oz-mst" firstAttribute="top" secondItem="4Ic-4Y-z2r" secondAttribute="bottom" constant="34" id="PXf-ec-EL8"/>
+                            <constraint firstItem="xzU-bG-sgV" firstAttribute="leading" secondItem="kia-YW-QMP" secondAttribute="leading" constant="32" id="Sad-PL-RBV"/>
+                            <constraint firstItem="eUz-Bz-tov" firstAttribute="top" secondItem="kia-YW-QMP" secondAttribute="top" constant="72" id="Swm-W9-fWI"/>
+                            <constraint firstItem="4Ic-4Y-z2r" firstAttribute="top" secondItem="K5m-Hs-NBN" secondAttribute="bottom" constant="41" id="TIh-P2-aNW"/>
+                            <constraint firstItem="4Ic-4Y-z2r" firstAttribute="leading" secondItem="kia-YW-QMP" secondAttribute="leading" constant="32" id="Ty0-OI-Nds"/>
+                            <constraint firstItem="Yl1-S2-dYJ" firstAttribute="top" secondItem="xzU-bG-sgV" secondAttribute="bottom" constant="12" id="VGz-nd-dPH"/>
+                            <constraint firstItem="kia-YW-QMP" firstAttribute="trailing" secondItem="4Ic-4Y-z2r" secondAttribute="trailing" constant="32" id="ccJ-Nh-aQa"/>
+                            <constraint firstItem="xzU-bG-sgV" firstAttribute="top" secondItem="kia-YW-QMP" secondAttribute="top" constant="182" id="hzs-8n-rVP"/>
+                            <constraint firstItem="K5m-Hs-NBN" firstAttribute="top" secondItem="o44-qd-ksR" secondAttribute="bottom" constant="12" id="ofI-n1-7vV"/>
+                            <constraint firstItem="kia-YW-QMP" firstAttribute="bottom" secondItem="GuN-oz-mst" secondAttribute="bottom" constant="122" id="tVY-bT-Gk9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextFiel" destination="Yl1-S2-dYJ" id="f1v-99-SZ5"/>
+                        <outlet property="passwordTextFiel" destination="K5m-Hs-NBN" id="svA-gB-0Lx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ok-OE-J1i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="230" y="-950"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
